@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <code>In demo mode*</code>
+    <div class="container">
+        <h1 id="h1">Calculate using two numbers</h1>
+        <form name="f1">    
+            <div>
+                <label for="first number">Enter First Number:</label>
+                <input type="number" name="fnumber" maxlength="10">    
+            </div>
+            <div>
+                <label for="opration">Enter opration:</label>
+                <select name="opration">
+                    <option>select Opration</option>
+                    <option value="add">+</option> 
+                    <option value="sub">-</option>
+                    <option value="div">/</option>
+                    <option value="mul">*</option>
+                </select>
+            </div>    
+            <div>
+                <label for="snumber">Enter Second Number:</label>
+                <input type="number"  name="snumber" maxlength="10">  
+            </div>
+        </form>
+        <button onclick="calc()">Calculate</button>
+        <div id="ansi">
+            <p id="ans">Calculation of two no:</p>
+        </div>
+    </div>
+<script src="cal.js"></script>
+</body>
+</html>
